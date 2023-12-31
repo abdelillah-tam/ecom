@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sneakers Store</title>
     <link rel="stylesheet" href="./dist/final.css" />
     <link rel="icon" href="./images/favicon-32x32.png" />
   </head>
@@ -13,13 +13,12 @@
         <div class="logo pl-3">
           <img src="./images/logo.svg" />
         </div>
-
-        <div class="flex basis-3/4 items-center pl-20">
-          <div class="p-5 text-dark-grayish-blue">Collections</div>
-          <div class="p-5 text-dark-grayish-blue">Men</div>
-          <div class="p-5 text-dark-grayish-blue">Women</div>
-          <div class="p-5 text-dark-grayish-blue">About</div>
-          <div class="p-5 text-dark-grayish-blue">Contact</div>
+        <div class="flex basis-3/4 items-center text-dark-grayish-blue pl-20">
+          <a class="p-5" href="#">Collections</a>
+          <a class="p-5" href="#">Men</a>
+          <a class="p-5" href="#">Women</a>
+          <a class="p-5" href="#">About</a>
+          <a class="p-5" href="#">Contact</a>
         </div>
         <div class="flex basis-1/5 items-center justify-evenly">
           <img
@@ -35,8 +34,64 @@
           />
         </div>
       </nav>
+      <hr />
     </header>
-
-    
+    <section class="flex justify-between pt-24">
+      <div class="basis-1/2 px-20">
+        <img class="rounded-xl" src="./images/image-product-1.jpg" />
+        <div class="flex justify-between">
+          <img
+            class="thumb rounded-xl"
+            src="./images/image-product-1-thumbnail.jpg"
+          />
+          <img
+            class="thumb rounded-xl"
+            src="./images/image-product-2-thumbnail.jpg"
+          />
+          <img
+            class="thumb rounded-xl"
+            src="./images/image-product-3-thumbnail.jpg"
+          />
+          <img
+            class="thumb rounded-xl"
+            src="./images/image-product-4-thumbnail.jpg"
+          />
+        </div>
+      </div>
+      <div class="flex flex-col justify-evenly basis-1/2 px-16">
+        <div>
+          <p class="font-semibold text-orange">SNEAKER COMPANY</p>
+          <p class="text-5xl font-bold text-very-dark-blue">
+            Fall Limited Edition Sneakers
+          </p>
+        </div>
+        <p class="text-xl text-dark-grayish-blue">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+        <div class="flex flex-col">
+          <div class="flex items-center">
+            <p class="font-bold text-2xl text-very-dark-blue">$125.00</p>
+            <p class="bg-pale-orange text-orange rounded-md ml-4 px-2 font-bold h-full text-center">50%</p>
+          </div>
+          <p class="font-bold text-grayish-blue line-through">$250.00</p>
+        </div>
+        <div class="flex flex-row">
+          <div
+            class="flex justify-around rounded-xl mr-4 basis-2/5 items-center bg-light-grayish-blue"
+          >
+            <img src="./images/icon-minus.svg" />
+            <p>0</p>
+            <img src="./images/icon-plus.svg" />
+          </div>
+          <div class="basis-3/5">
+            <button class="p-4 rounded-xl text-white bg-orange w-full h-full">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

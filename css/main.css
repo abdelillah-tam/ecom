@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.thumb{
+    width: 20%;
+    height: 20%;
+    margin-top: 5%;
+}
