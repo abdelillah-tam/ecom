@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./*"],
   theme: {
+    fontFamily: {
+      'kumbh':['Kumbh Sans', 'sans-serif']
+    },
     extend: {
       colors: {
         'orange': 'hsl(26, 100%, 55%)',
@@ -10,7 +13,8 @@ module.exports = {
         "dark-grayish-blue": "hsl(219, 9%, 45%)",
         "grayish-blue": "hsl(220, 14%, 75%)",
         "light-grayish-blue": "hsl(223, 64%, 98%)",
-      }
+      },
+  
     },
   },
   plugins: [],
