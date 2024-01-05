@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.thumb{
+.thumbnail-div{
     width: 20%;
     height: 20%;
     margin-top: 5%;
