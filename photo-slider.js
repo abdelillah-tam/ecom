@@ -1,9 +1,24 @@
-import { products, addToShopcart } from "./data/cart.js";
+const productTitleElement = document.querySelector(".product-title-element");
+const productDescriptionElement = document.querySelector(
+  ".product-description-element"
+);
+const productPriceElement = document.querySelector(".price-element");
+const productCompanyElement = document.querySelector(".company-element");
 
-const productTitleElement = document.querySelector('.product-title-element');
-const productDescriptionElement = document.querySelector('.product-description-element');
-const productPriceElement = document.querySelector('.price-element');
-const productCompanyElement = document.querySelector('.company-element');
+export const productOne = new Product(
+  1,
+  "Fall Limited Edition Sneakers",
+  "SNEAKER COMPANY",
+  "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, " +
+    "they'll withstand everything" +
+    "the weather can offer.",
+  20,
+  0,
+  "125.00"
+);
+
+setProductToElements(productOne);
+
 let thumbs = document.querySelectorAll(".thumb");
 let thumbsDiv = document.querySelectorAll(".thumbnail-div");
 
@@ -12,27 +27,14 @@ let plusElement = document.getElementsByClassName("plus");
 
 let productImageElement = document.getElementsByClassName("product-image-js");
 
-let quantityElement = document.getElementsByClassName("quantity");
-
+export let quantityElement = document.getElementsByClassName("quantity");
 let quantity = 0;
 
-const productOne = new Product(
-  "Fall Limited Edition Sneakers",
-  "SNEAKER COMPANY",
-  "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, " +
-    "they'll withstand everything" +
-    "the weather can offer.",
-  20,
-  '125.00'
-);
-
-setProductToElements(productOne);
 function setProductToElements(product) {
   productTitleElement.textContent = product.productName;
   productCompanyElement.textContent = product.company;
   productDescriptionElement.textContent = product.description;
   productPriceElement.textContent = `$${product.price}`;
-
 }
 function addOne() {
   quantity++;
