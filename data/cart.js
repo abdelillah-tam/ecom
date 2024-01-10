@@ -6,12 +6,10 @@ export function addToCart(product) {
     products.push(product);
     
   }else{
-    console.log('called');
     products[product.productId - 1].quantity = product.quantity;
     products[product.productId - 1].reservedQuantity = product.reservedQuantity;
   }
   localStorage.setItem("products", JSON.stringify(products));
-  console.log(products);
 }
 
 export function getFromCart() {
@@ -20,5 +18,6 @@ export function getFromCart() {
 }
 
 export function removeFromCart(position) {
-  //products.filter((index) => index !== position);
+  products = products.filter((index) => index === position);
+  localStorage.setItem("products", JSON.stringify(products));
 }

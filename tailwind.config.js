@@ -16,6 +16,7 @@ module.exports = {
       },
       transitionProperty: {
         'border': 'border',
+        'height':'height'
       },
     },
   },
