@@ -9,6 +9,8 @@ const productCartElement = document.querySelector(".product-cart-element");
 const addToCartButtonElement = document.querySelector(".add-to-cart");
 const checkoutBtn = document.querySelector(".checkout-btn");
 const removeBtns = document.querySelectorAll(".remove");
+const quantityBadge = document.querySelector('.quantity-badge');
+
 addToCartButtonElement.addEventListener("click", putToCart);
 
 if (products.length === 0) {
@@ -71,6 +73,8 @@ function refreshShopcart(position = -1) {
           removeFromShopcart(element.productId - 1)
         );
 
+        quantityBadge.textContent = element.reservedQuantity;
+
       if (productCartElement.hasChildNodes()) {
         productCartElement.replaceChild(
           div,
@@ -90,5 +94,6 @@ function refreshShopcart(position = -1) {
     productCartElement.classList.remove("overflow-y-scroll");
     document.querySelector('.empty').classList.remove('hidden');
     document.querySelector('.empty').classList.add('basis-full');
+    quantityBadge.textContent = null;
   }
 }
