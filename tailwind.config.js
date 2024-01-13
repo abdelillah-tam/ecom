@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./*"],
   theme: {
+    screens:{
+      'ml': {'max': '488px'},
+    },
     fontFamily: {
       kumbh: ["Kumbh Sans", "sans-serif"],
     },
@@ -16,7 +19,8 @@ module.exports = {
       },
       transitionProperty: {
         'border': 'border',
-        'height':'height'
+        'height':'height',
+        'left':'left'
       },
     },
   },
