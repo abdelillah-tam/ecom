@@ -949,6 +949,10 @@ video {
     top: 0px;
   }
 
+  .ml\:right-full {
+    right: 100%;
+  }
+
   .ml\:my-3 {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
@@ -986,6 +990,10 @@ video {
 
   .ml\:w-7 {
     width: 1.75rem;
+  }
+
+  .ml\:w-1\/2 {
+    width: 50%;
   }
 
   .ml\:flex-grow {
