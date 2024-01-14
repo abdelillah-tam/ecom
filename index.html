@@ -27,7 +27,7 @@
         <div
           class="menu flex ml:absolute ml:transition-transform right-full ml:duration-500 ml:bg-white w-1/2 ml:top-0 ml:h-full ml:pl-0 ml:text-very-dark-blue ml:items-start z-30 ml:flex-col basis-3/4 items-center text-dark-grayish-blue pl-20"
         >
-          <img src="./images/icon-close.svg" class="hidden ml:p-5 close-nav"/>
+          <img src="./images/icon-close.svg" class="hidden ml:p-5 close-nav" />
           <a class="p-5 hover:text-orange" href="#">Collections</a>
           <a class="p-5 hover:text-orange" href="#">Men</a>
           <a class="p-5 hover:text-orange" href="#">Women</a>
@@ -58,7 +58,7 @@
       </nav>
       <hr />
       <div
-        class="shopcart-box flex flex-col h-0 transition-height duration-500 bg-white absolute rounded-lg right-10 left-2/3 shadow-lg overflow-hidden"
+        class="shopcart-box flex flex-col h-0 transition-height duration-500 bg-white absolute rounded-lg right-10 ml:right-0 left-2/3 ml:left-0 shadow-lg overflow-hidden"
       >
         <h1 class="p-4">Cart</h1>
         <hr />
@@ -122,11 +122,11 @@
         <div>
           <p class="company-element font-semibold text-orange"></p>
           <p
-            class="product-title-element text-5xl font-bold text-very-dark-blue"
+            class="product-title-element text-5xl ml:text-3xl font-bold text-very-dark-blue"
           ></p>
         </div>
         <p
-          class="product-description-element text-xl text-dark-grayish-blue"
+          class="product-description-element text-xl ml:text-base text-dark-grayish-blue"
         ></p>
         <div class="flex flex-col">
           <div class="flex items-center">
@@ -139,9 +139,9 @@
           </div>
           <p class="font-bold text-grayish-blue line-through">$250.00</p>
         </div>
-        <div class="flex flex-row ml:flex-col">
+        <div class="flex flex-row ml:flex-col overflow-hidden">
           <div
-            class="flex justify-around rounded-xl mr-4 basis-2/5 items-center bg-light-grayish-blue"
+            class="flex justify-between rounded-xl ml:my-2 mr-4 ml:mr-0 ml:p-4 basis-2/5 ml:basis-1/2 items-center bg-light-grayish-blue"
           >
             <img
               class="minus hover:opacity-70 transition-opacity duration-500 cursor-pointer"
@@ -153,7 +153,7 @@
               src="./images/icon-plus.svg"
             />
           </div>
-          <div class="basis-3/5">
+          <div class="basis-3/5 ml:basis-1/2">
             <button
               class="add-to-cart hover:opacity-70 transition-opacity duration-500 p-4 rounded-xl text-white font-bold bg-orange w-full h-full"
             >
